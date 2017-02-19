@@ -1,3 +1,3 @@
 # vim
-config stuff
+##config stuff
 testing git
