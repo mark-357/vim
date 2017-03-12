@@ -33,6 +33,7 @@ map <leader>s :source ~/.vimrc<CR>
 map <F9> :NERDTreeFind<CR>
 map <F10> :NERDTreeToggle<CR>
 
+set path+=**
 set wildmenu
 set number
 set history=50
@@ -76,5 +77,5 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
-
+set backspace=2
 set mouse=a
