@@ -14,6 +14,8 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'reedes/vim-colors-pencil'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -33,6 +35,8 @@ map <leader>s :source ~/.vimrc<CR>
 map <F9> :NERDTreeFind<CR>
 map <F10> :NERDTreeToggle<CR>
 
+set laststatus=2
+let g:airline_powerline_fonts = 1
 set path+=**
 set wildmenu
 set number
@@ -74,7 +78,7 @@ endfunction
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
-" Open new split panes to right and bottom, which feels more natural
+" Open new split panes to right and bottom, which feels more natural "
 set splitbelow
 set splitright
 set backspace=2
